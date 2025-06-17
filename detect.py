@@ -89,16 +89,16 @@ if img_input is not None:
     # -------------------------------
     # 📧 If person detected, send email
     # -------------------------------
-    if person_detected:
-        st.warning("🚨 Person detected! Sending email alert...")
-        is_success, encoded_image = cv2.imencode('.jpg', frame)
-        if is_success:
-            send_email_alert(
-                subject="🚨 Intruder Detected!",
-                body="A person was detected in the camera snapshot.",
-                to_email="receiver_email@gmail.com",
-                image_bytes=encoded_image.tobytes()
-            )
+    #if person_detected:
+    #    st.warning("🚨 Person detected! Sending email alert...")
+    #    is_success, encoded_image = cv2.imencode('.jpg', frame)
+    #    if is_success:
+    #        send_email_alert(
+    #            subject="🚨 Intruder Detected!",
+    #            body="A person was detected in the camera snapshot.",
+    #            to_email="receiver_email@gmail.com",
+    #            image_bytes=encoded_image.tobytes()
+    #        )
 
     # -------------------------------
     # 🔔 Play Chime (fallback for web)
