@@ -42,8 +42,8 @@ load_dotenv()
 # -------------------------------
 # ✅ CONFIG & MODEL
 # -------------------------------
-st.set_page_config(page_title="Intrusion Alert", layout="wide")
-st.title("🚨 Intrusion Detection System")
+st.set_page_config(page_title="House Intrusion Alert", layout="wide")
+st.title("🚨 House Intrusion Detection System")
 
 model = YOLO("yolov8n.pt")
 names = model.names
