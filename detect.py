@@ -113,8 +113,11 @@ if img_input is not None:
     # -------------------------------
     st.image(frame, channels="BGR", caption="Detected objects", use_column_width=True)
 
-    with st.expander("📋 Detected Objects"):
-        st.write(", ".join(detected_labels) if detected_labels else "No valid detections.")
+    #with st.expander("📋 Detected Objects"):
+    #    st.write(", ".join(detected_labels) if detected_labels else "No valid detections.")
+    st.markdown("### 📋 Detected Objects")
+    st.write(", ".join(detected_labels) if detected_labels else "No valid detections.")
+
 
     # -------------------------------
     # 💾 Download Image
