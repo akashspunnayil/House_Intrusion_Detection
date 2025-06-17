@@ -1,0 +1,8 @@
+streamlit
+cv2
+ultralytics
+numpy
+email.message
+smtplib
+ssl
+dotenv

@@ -9,13 +9,18 @@ import os
 from io import BytesIO
 from PIL import Image
 import base64
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+
 
 # -------------------------------
 # 🔧 EMAIL ALERT FUNCTION
 # -------------------------------
 def send_email_alert(subject, body, to_email, image_bytes):
-    sender_email = "akashsipcs@gmail.com"
-    app_password = "zeyw jake wutq ppsd"
+    sender_email = os.getenv("EMAIL")
+    app_password = os.getenv("APP_PASSWORD")
 
     msg = EmailMessage()
     msg["Subject"] = subject
