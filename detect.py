@@ -14,30 +14,30 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-'''
+
 # -------------------------------
 # 🔧 EMAIL ALERT FUNCTION
 # -------------------------------
-def send_email_alert(subject, body, to_email, image_bytes):
-    sender_email = os.getenv("EMAIL")
-    app_password = os.getenv("APP_PASSWORD")
+#def send_email_alert(subject, body, to_email, image_bytes):
+#    sender_email = os.getenv("EMAIL")
+#    app_password = os.getenv("APP_PASSWORD")
+#
+#    msg = EmailMessage()
+#    msg["Subject"] = subject
+#    msg["From"] = sender_email
+#    msg["To"] = to_email
+#    msg.set_content(body)
+#
+#    # Attach image
+#    msg.add_attachment(image_bytes, maintype="image", subtype="jpeg", filename="intrusion.jpg")
+#
+#    context = ssl.create_default_context()
+#    with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
+#        server.login(sender_email, app_password)
+#        server.send_message(msg)
+#
+#    st.success("📧 Email alert sent!")
 
-    msg = EmailMessage()
-    msg["Subject"] = subject
-    msg["From"] = sender_email
-    msg["To"] = to_email
-    msg.set_content(body)
-
-    # Attach image
-    msg.add_attachment(image_bytes, maintype="image", subtype="jpeg", filename="intrusion.jpg")
-
-    context = ssl.create_default_context()
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
-        server.login(sender_email, app_password)
-        server.send_message(msg)
-
-    st.success("📧 Email alert sent!")
-'''
 
 # -------------------------------
 # ✅ CONFIG & MODEL
