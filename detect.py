@@ -119,10 +119,10 @@ if img_input is not None:
     # -------------------------------
     # 💾 Download Image
     # -------------------------------
-    st.download_button(
-        label="📥 Download Detection Image",
-        data=encoded_image.tobytes(),
-        file_name=f"intrusion_{int(time.time())}.jpg",
-        mime="image/jpeg"
-    )
+    #st.download_button(
+    #    label="📥 Download Detection Image",
+    #    data=encoded_image.tobytes(),
+    #    file_name=f"intrusion_{int(time.time())}.jpg",
+    #    mime="image/jpeg"
+    #)
 
