@@ -1,8 +1,5 @@
 streamlit
-cv2
+opencv-python
 ultralytics
 numpy
-email.message
-smtplib
-ssl
-dotenv
+python-dotenv
