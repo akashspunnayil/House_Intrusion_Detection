@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-
+'''
 # -------------------------------
 # 🔧 EMAIL ALERT FUNCTION
 # -------------------------------
@@ -37,6 +37,7 @@ def send_email_alert(subject, body, to_email, image_bytes):
         server.send_message(msg)
 
     st.success("📧 Email alert sent!")
+'''
 
 # -------------------------------
 # ✅ CONFIG & MODEL
