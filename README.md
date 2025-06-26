@@ -1,5 +1,7 @@
 # House Intrusion Detection System (Streamlit App)
 
+[View App](https://a-house-intrusion-detection-app.streamlit.app)
+
 This Streamlit app uses a YOLOv8 model to detect people, animals, and vehicles from webcam snapshots. It can alert on detection via display and optionally by email.
 
 ## Objective
